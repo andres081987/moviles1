@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarseActivity">
+
+    <TextView
+        android:id="@+id/tvregistrarse"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Registrarse" />
+
+    <EditText
+        android:id="@+id/etidentificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Ingrese una identificacion"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="Ingrese un correo"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ingrese Nombre" />
+
+    <EditText
+        android:id="@+id/etclave1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:hint="Ingrese una contraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etclave2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:hint="Confirme la contraseña"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:enabled="false"
+        android:layout_marginLeft="70dp"
+        android:text="Activo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btguardar"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="Guardar"
+            android:text="Guardar"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/consultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:onClick="consultar"
+            android:gravity="center"
+            android:text="Consultar" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="Anular"
+            android:text="Anular"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/bteliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:onClick="Eliminar"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Eliminar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btcancelar"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="Cancelar"
+            android:text="Cancelar"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:onClick="Regresar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Regresar" />
+</LinearLayout>

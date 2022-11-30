@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:textSize="35dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="Menu ingreso" />
+
+    <EditText
+        android:id="@+id/etusuario"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Digite el usuario" />
+
+    <EditText
+        android:id="@+id/etclave"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:hint="Digite clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btingresar"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:layout_width="300dp"
+        android:layout_marginLeft="55dp"
+        android:onClick="Ingresar"
+        android:layout_height="wrap_content"
+        android:text="Ingresar" />
+
+    <Button
+        android:id="@+id/btregistrarse"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:onClick="Registrarse"
+        android:layout_width="300dp"
+        android:layout_marginLeft="55dp"
+        android:layout_height="wrap_content"
+        android:text="Registrarse" />
+</LinearLayout>
